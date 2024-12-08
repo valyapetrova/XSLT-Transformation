@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Employee Transformation</title>
+</head>
+<body>
+<h1>Transform Employees XML</h1>
+<form th:action="@{/transform}" method="post">
+    <button type="submit">Transform XML</button>
+</form>
+
+<div th:if="${transformedXml}">
+    <h2>Transformed Employee Data</h2>
+    <div th:utext="${transformedXml}"></div>
+</div>
+
+<div th:if="${error}">
+    <h3 th:text="${error}"></h3>
+</div>
+</body>
+</html>
