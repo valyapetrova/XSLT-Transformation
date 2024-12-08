@@ -23,7 +23,7 @@ public class EmployeeController {
         try {
             String transformedXml = employeeTransformer.transformEmployeeXml();
             model.addAttribute("transformedXml", transformedXml);
-            return "transform"; // Thymeleaf template name
+            return "transform";
         } catch (TransformerException | IOException e) {
             model.addAttribute("error", "Error during transformation: " + e.getMessage());
             return "error";
