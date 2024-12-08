@@ -2,14 +2,20 @@
 <company xmlns="http://example.com/employee">
     <employee>
         <id>1</id>
-        <name>John Doe</name>
-        <department>IT</department>
-        <salary>75000</salary>
+        <name>Silvia Velkova</name>
+        <department>HR</department>
+        <salary>2500</salary>
     </employee>
     <employee>
         <id>2</id>
-        <name>Jane Smith</name>
-        <department>HR</department>
-        <salary>65000</salary>
+        <name>Georgi Ivanov</name>
+        <department>Java developer</department>
+        <salary>3600</salary>
+    </employee>
+    <employee>
+        <id>3</id>
+        <name>Desislava Petrova</name>
+        <department>QA specialist</department>
+        <salary>2800</salary>
     </employee>
 </company>

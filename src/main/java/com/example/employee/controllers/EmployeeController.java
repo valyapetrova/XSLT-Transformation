@@ -1,11 +1,11 @@
-package com.example.employee;
+package com.example.employee.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RestController;
+import com.example.employee.services.EmployeeTransformer;
 
 import javax.xml.transform.TransformerException;
 import java.io.IOException;
@@ -16,7 +16,7 @@ public class EmployeeController {
     private EmployeeTransformer employeeTransformer;
     @GetMapping("/")
     public String showForm() {
-        return "transform"; // This renders the Thymeleaf template `index.html`.
+        return "transform";
     }
     @PostMapping("/transform")
     public String getTransformedEmployeeXml(Model model) {
