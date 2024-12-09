@@ -1,5 +1,4 @@
 package com.example.employee.security;
-
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -19,7 +18,7 @@ public class SecurityConfig {
                         .requestMatchers("/transform").authenticated()
                         .anyRequest().authenticated()
                 )
-                .httpBasic(); // Enable basic authentication
+                .httpBasic();
         return http.build();
     }
 
